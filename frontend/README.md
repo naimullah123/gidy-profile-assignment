@@ -1,62 +1,56 @@
-# Gidy Profile Replica Project
+#Gidy Profile Replica Project
 
-This project is a full-stack replica of the Gidy profile page built as part of the Associate Software Developer technical assessment.
+Full-stack replica of the Gidy profile page built using React, Node.js, and MongoDB as part of the Associate Software Developer assessment.
 
-## Live Demo
+#Live Links
 
-Frontend: "https://gidy-profile-assignment.vercel.app/"
+Frontend: https://gidy-profile-assignment.vercel.app/
 
-Backend: "https://gidy-profile-backend.onrender.com/"
+Backend: https://gidy-profile-backend.onrender.com/
 
-## Tech Stack
+#Tech Stack
 
-Frontend:
-- React.js (Vite)
-- CSS Flexbox and Grid
+Frontend: React.js (Vite), CSS
+Backend: Node.js, Express.js
+Database: MongoDB Atlas
+Deployment: Vercel (Frontend), Render (Backend)
 
-Backend:
-- Node.js
-- Express.js REST API
+#Features
 
-Database:
-- MongoDB Atlas (NoSQL cloud database)
+Profile UI replica based on Gidy design
 
-Deployment:
-- Vercel (Frontend)
-- Render (Backend)
+Fetch and display profile data from backend
 
-## Core Features
+Edit profile and save updates to database
 
-- Profile page UI replica matching Gidy design
-- Fetch profile data from backend API
-- Edit profile functionality with real-time updates
-- Skills, Education, and Certification sections
-- Responsive centered layout
+Skills, Education, and Certification sections
 
-## Innovation Feature
+Responsive and clean layout
 
-Editable profile mode allowing users to update profile information and save it directly to the MongoDB database using REST API.
+#Innovation Feature
 
-This enhances interactivity beyond static profile viewing.
+Edit mode allowing users to update profile information dynamically with real-time database persistence.
 
-## Setup Instructions
+#Run Locally
 
 Clone repository:
 
 git clone https://github.com/naimullah123/gidy-profile-assignment.git
 
-Backend setup:
+
+#Backend:
 
 cd backend
 npm install
 node server.js
 
-Frontend setup:
+
+#Frontend:
 
 cd frontend
 npm install
 npm run dev
 
-## Author
+#Author
 
 Naimullah Shaik
