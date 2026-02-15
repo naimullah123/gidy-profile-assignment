@@ -1,21 +1,21 @@
-#Gidy Profile Replica Project
+Gidy Profile Replica Project
 
 Full-stack replica of the Gidy profile page built using React, Node.js, and MongoDB as part of the Associate Software Developer assessment.
 
-#Live Links
+Live Links
 
 Frontend: https://gidy-profile-assignment.vercel.app/
 
 Backend: https://gidy-profile-backend.onrender.com/
 
-#Tech Stack
+Tech Stack
 
 Frontend: React.js (Vite), CSS
 Backend: Node.js, Express.js
 Database: MongoDB Atlas
 Deployment: Vercel (Frontend), Render (Backend)
 
-#Features
+Features
 
 Profile UI replica based on Gidy design
 
@@ -27,30 +27,30 @@ Skills, Education, and Certification sections
 
 Responsive and clean layout
 
-#Innovation Feature
+Innovation Feature
 
 Edit mode allowing users to update profile information dynamically with real-time database persistence.
 
-#Run Locally
+Run Locally
 
 Clone repository:
 
 git clone https://github.com/naimullah123/gidy-profile-assignment.git
 
 
-#Backend:
+Backend:
 
 cd backend
 npm install
 node server.js
 
 
-#Frontend:
+Frontend:
 
 cd frontend
 npm install
 npm run dev
 
-#Author
+Author
 
 Naimullah Shaik
