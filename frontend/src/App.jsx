@@ -19,7 +19,7 @@ function App() {
 
   // Fetch profile
   useEffect(() => {
-    fetch("http://localhost:5000/api/profile")
+    fetch("https://gidy-profile-backend.onrender.com/api/profile")
       .then(res => res.json())
       .then(data => {
         if (data) {
@@ -50,7 +50,7 @@ function App() {
   // Save profile (PUT request) — updated version
   const handleSave = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/profile", {
+      const res = await fetch("https://gidy-profile-backend.onrender.com/api/profile", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json"
