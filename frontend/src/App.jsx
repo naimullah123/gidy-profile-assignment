@@ -50,7 +50,7 @@ function App() {
   // Save profile (PUT request) — updated version
   const handleSave = async () => {
     try {
-      const res = await fetch("https://gidy-profile-backend.onrender.com/api/profile"), {
+      const res = await fetch("https://gidy-profile-backend.onrender.com/api/profile", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json"
