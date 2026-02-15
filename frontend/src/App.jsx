@@ -54,26 +54,43 @@ function App() {
         method: "PUT",
         headers: {
           "Content-Type": "application/json"
+const handleSave = async () => {
+  try {
+
+    const res = await fetch("https://gidy-profile-backend.onrender.com/api/profile", {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        bio: formData.bio,
+        profilePic: formData.profilePic,
+        skills: formData.skills.split(",").map(skill => skill.trim()),
+        socialLinks: {
+          linkedin: formData.linkedin,
+          github: formData.github
         },
-        body: JSON.stringify({
-          name: formData.name,
-          bio: formData.bio,
-          profilePic: formData.profilePic,
-          skills: formData.skills,
-          education: formData.education,
-          certifications: formData.certifications
-        })
-      });
+        education: formData.education,
+        certifications: formData.certifications
+      })
+    });
 
-      const updated = await res.json();
-      console.log("Updated:", updated);
+    const updated = await res.json();
 
-      setProfile(updated);
-      setEditMode(false);
-    } catch (error) {
-      console.error("Save failed:", error);
-    }
-  };
+    console.log("Updated:", updated);
+
+    setProfile(updated);
+
+    setEditMode(false);
+
+  } catch (error) {
+
+    console.error("Save failed:", error);
+
+  }
+};
+
 
   if (!profile && !editMode) return <div className="loading">Loading...</div>;
 
