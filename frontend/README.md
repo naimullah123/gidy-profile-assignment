@@ -4,8 +4,9 @@ This project is a full-stack replica of the Gidy profile page built as part of t
 
 ## Live Demo
 
-Frontend: (Add after deployment)
-Backend: (Add after deployment)
+Frontend: "https://gidy-profile-assignment.vercel.app/"
+
+Backend: "https://gidy-profile-backend.onrender.com/"
 
 ## Tech Stack
 
